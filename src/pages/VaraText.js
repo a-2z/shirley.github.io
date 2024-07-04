@@ -1,32 +1,34 @@
 import React, { useEffect } from "react";
 import Vara from "vara";
-import "../styles/styles.css"; // Your CSS file import if needed
+import "../styles/styles.css"; 
 
-function VaraText({ text }) {
+function VaraText() {
   useEffect(() => {
     var vara = new Vara(
       "#vara-container",
       "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
       [
         {
-          text: text,
+          text: "Happy",
           textAlign: "center",
-          x: 10,
-          y: 10,
-          fontSize: 60, // Adjust font size relative to viewport width
+          fontSize: 60,
           strokeWidth: 1.8,
-          duration: 2000
+          duration: 2000,
+        },
+        {
+          text: "Birthday!",
+          textAlign: "center",
+          fontSize: 60, 
+          strokeWidth: 1.8,
+          duration: 2100,
+          queued: false,
         }
       ]
     );
   }, []);
 
-  const containerStyle = {
-    border: "20px" // Adjust padding as needed
-  };
-
   return (
-    <div id="vara-container" className="z-[20]" style={containerStyle}></div>
+    <div id="vara-container" padding-top="100px"></div>
   );
 }
 

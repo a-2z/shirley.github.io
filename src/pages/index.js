@@ -1,17 +1,18 @@
 import React from "react";
 import VaraText from "./VaraText";
+import ShirleyText from "./ShirleyText";
 import "../styles/styles.css";
-import FireworksAnimation from "./FireworksAnimation"; // Import your animation component
 
 const IndexPage = () => {
   return (
     <main>
       <div className="container">
-          <VaraText text="Happy Birthday, Shirley!" />
-          <br />
-          <button onClick={() => alert("Happy Birthday, Shirley!")}>
-          Send Wishes
-          </button>
+        <VaraText />
+        <ShirleyText />
+        <br />
+        <button>
+          Open
+        </button>
       </div>
     </main>
   );

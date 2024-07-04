@@ -1,47 +1,55 @@
-/* src/styles/styles.css */
-
-/* Reset default margins and paddings */
-body {
-  }
-  
-  /* Page container */
-  main {
+/* Page container */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
     text-align: center; /* Center align text content */
-    padding: 40px;
-  }
-  
-  /* Heading styles */
-  h1 {
-    margin-top: 0;
-    margin-bottom: 32px;
-    font-size: 3rem; /* Larger font size for headings */
-    color: #663399; /* Purple color for headings */
-  }
-  
-  /* Emoji styles */
-  span {
-    font-size: 2rem; /* Larger font size for emojis */
-  }
-  
-  /* Paragraph styles */
-  p {
-    font-size: 1.2rem; /* Medium font size for paragraphs */
-    line-height: 1.6; /* Improved readability with slightly increased line height */
-    margin-bottom: 24px;
-  }
-  
-  /* Button styles */
-  button {
+}
+
+/* Button positioning */
+button {
+    position: absolute;
+    bottom: 40px; /* 40px above the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%);
     padding: 12px 24px;
     font-size: 1.2rem;
-    background-color: #663399; /* Purple button color */
-    color: #ffffff; /* White text color */
-    border: none;
-    border-radius: 6px;
+    color: #ff147a; /* Pink text color */
+    background-color: #ffffff; /* White background */
+    border: 2px solid #ff147a; /* Pink border */
+    border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #8954a8; /* Darker shade of purple on hover */
-  }
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff147a; /* Pink background on hover */
+    color: #ffffff; /* White text on hover */
+    border-color: #ffffff; /* White border on hover */
+}
+
+button.fade-in {
+    opacity: 1; /* Make the button visible */
+    bottom: 40px; /* Move button into view */
+}
+
+/* Glowing text animation */
+.glowing-text svg path {
+    stroke: #ff147a;
+    stroke-width: 2;
+    animation: glow 1.7s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        stroke: #ff147a;
+        stroke-width: 2;
+        filter: drop-shadow(0 0 2px #ff147a) drop-shadow(0 0 1px #ff147a);
+    }
+    to {
+        stroke: #ff147a;
+        stroke-width: 2.5;
+        filter: drop-shadow(0 0 0px #ff147a) drop-shadow(0 0 2px #ff147a);
+    }
+}
