@@ -1,23 +1,19 @@
 import React from "react";
+import VaraText from "./VaraText";
+import ShirleyText from "./ShirleyText";
 import "../styles/styles.css";
 
 const IndexPage = () => {
   return (
     <main>
-      <h1>
-        Happy Birthday, Shirley!
+      <div className="container">
+        <VaraText />
+        <ShirleyText />
         <br />
-        <span>🎉🎂🎈</span>
-      </h1>
-      <p>
-        Wishing you a day filled with love, joy, and all your favorite things. Enjoy your special day!
-      </p>
-      <button onClick={() => alert("Happy Birthday, Shirley!")}>
-        Send Wishes
-      </button>
-      <p>
-        <a href="/about">Learn more about Shirley</a>
-      </p>
+        <button>
+          Open
+        </button>
+      </div>
     </main>
   );
 };
