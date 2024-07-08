@@ -13,7 +13,8 @@ function ShirleyText() {
           textAlign: "center",
           fontSize: 80,
           strokeWidth: 4,
-          delay: 2000,
+          delay: 3500,
+          duration: 3100,
           y: 20,
         }
       ]

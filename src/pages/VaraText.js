@@ -13,14 +13,14 @@ function VaraText() {
           textAlign: "center",
           fontSize: 60,
           strokeWidth: 1.8,
-          duration: 2000,
+          duration: 3100,
         },
         {
           text: "Birthday!",
           textAlign: "center",
           fontSize: 60, 
           strokeWidth: 1.8,
-          duration: 2100,
+          duration: 3500,
           queued: false,
         }
       ]
