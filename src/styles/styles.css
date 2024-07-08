@@ -1,55 +1,127 @@
 /* Page container */
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    text-align: center; /* Center align text content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center align text content */
 }
 
-/* Button positioning */
+/* Container for buttons */
+.button-container {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px; /* Space above the buttons */
+}
+
+/* Button styling */
 button {
-    position: absolute;
-    bottom: 40px; /* 40px above the bottom of the screen */
-    left: 50%;
-    transform: translateX(-50%);
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  color: #ffffff; /* Pink text color */
+  background-color: #ff147a; /* White background */
+  border: 2px solid #ff147a; /* Pink border */
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff147a; /* Pink background on hover */
+  color: #ffffff; /* White text on hover */
+  border-color: #ffffff; /* White border on hover */
+}
+
+.secondary-button {
     padding: 12px 24px;
     font-size: 1.2rem;
     color: #ff147a; /* Pink text color */
     background-color: #ffffff; /* White background */
-    border: 2px solid #ff147a; /* Pink border */
+    border: 2px solid #ffffff; /* Pink border */
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff147a; /* Pink background on hover */
-    color: #ffffff; /* White text on hover */
-    border-color: #ffffff; /* White border on hover */
-}
-
-button.fade-in {
-    opacity: 1; /* Make the button visible */
-    bottom: 40px; /* Move button into view */
-}
+  }
 
 /* Glowing text animation */
 .glowing-text svg path {
-    stroke: #ff147a;
-    stroke-width: 2;
-    animation: glow 1.7s ease-in-out infinite alternate;
+  stroke: #ff147a;
+  stroke-width: 2;
+  animation: glow 1.7s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-    from {
-        stroke: #ff147a;
-        stroke-width: 2;
-        filter: drop-shadow(0 0 2px #ff147a) drop-shadow(0 0 1px #ff147a);
-    }
-    to {
-        stroke: #ff147a;
-        stroke-width: 2.5;
-        filter: drop-shadow(0 0 0px #ff147a) drop-shadow(0 0 2px #ff147a);
-    }
+  from {
+    stroke: #ff147a;
+    stroke-width: 2;
+    filter: drop-shadow(0 0 2px #ff147a) drop-shadow(0 0 1px #ff147a);
+  }
+  to {
+    stroke: #ff147a;
+    stroke-width: 2.5;
+    filter: drop-shadow(0 0 0px #ff147a) drop-shadow(0 0 2px #ff147a);
+  }
+}
+
+/* Page container */
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+/* Background animation */
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/404_sad.jpg') no-repeat center center/cover;
+  z-index: -1;
+  animation: backgroundAnimation 5s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Heading style */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph style */
+p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Home button style */
+.home-button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #ff147a;
+  border: 2px solid #ff147a;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #ffffff;
+  color: #ff147a;
+  border-color: #ffffff;
 }
