@@ -1,0 +1,35 @@
+
+/* 
+Scrapbook Page Properties
+*/
+.scrapbook-viewer {
+    padding: 0;
+    margin: 0;
+}
+
+.scrapbook-desktop {
+    background-image: url(../images/assets/desk_background.jpg);
+    width: 100 vw;
+    height: 100 vh;
+    margin: 0;
+    padding: 0;
+} 
+
+.scrapbook-cover {
+    background-image: url(../images/assets/scrapbook_cover_background.jpg);
+    background-size: cover;
+    margin:auto;
+    text-align: center;
+    @media (orientation: landscape) {
+        height: 100vh;
+    }
+    @media (orientation: portrait) {
+        width: 100vw;
+    }
+    aspect-ratio: 4 / 3;
+}
+
+.scrapbook-cover-text-container {
+    margin-top: 49vh;
+    font-family: cursive;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/styles.css";
+import "../styles/scrapbook-styles.css";
 
 //import SCRAPBOOK_COVER from
 /**
