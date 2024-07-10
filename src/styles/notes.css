@@ -1,0 +1,117 @@
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; /* Adjust the height as needed */
+    padding: 20px;
+    position: relative; /* Ensure relative positioning for absolute positioning of buttons */
+  }
+  
+  .image-container {
+    max-width: 100%; /* Ensures the image container doesn't exceed its parent's width */
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Makes sure the image itself doesn't exceed its container's width */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  .buttons-container {
+    position: absolute;
+    bottom: 48px; /* Distance from the bottom */
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttons-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttons-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* styles.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  .main {
+    margin-bottom: 40px;
+  }
+  
+  .mysterious-button {
+    font-size: 24px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mysterious-button:hover {
+    background-color: #ff4081;
+  }
+  
+  .revealed-note-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #e91e63;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .revealed-note-link:hover {
+    background-color: #e91e63;
+    color: white;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  
+/* Button styling */
+button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #ffffff; /* Pink text color */
+    background-color: #ff147a; /* White background */
+    border: 2px solid #ff147a; /* Pink border */
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff147a; /* Pink background on hover */
+    color: #ffffff; /* White text on hover */
+    border-color: #ffffff; /* White border on hover */
+  }
