@@ -1,56 +1,64 @@
-import React from "react"
-
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  textAlign: "center",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: "64px",
-  maxWidth: "320px",
-}
-const headingAccentStyles = {
-  color: "#FF69B4",
-}
-const paragraphStyles = {
-  marginBottom: "48px",
-  fontSize: "1.25rem",
-}
-const imageStyles = {
-  width: "300px",
-  borderRadius: "50%",
-  marginBottom: "48px",
-}
-const buttonStyles = {
-  padding: "10px 20px",
-  fontSize: "1.25rem",
-  color: "#FFF",
-  backgroundColor: "#FF69B4",
-  border: "none",
-  borderRadius: "8px",
-  cursor: "pointer",
-}
+import React, { useEffect, useState } from "react";
+import Confetti from "react-confetti";
+import { FaRedo } from "react-icons/fa";
+import VaraText from "./VaraText";
+import ShirleyText from "./ShirleyText";
+import "../styles/styles.css";
+import "../styles/animations.css";
 
 const IndexPage = () => {
+  const [confettiOn, setConfettiOn] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
+  const [buttonsVisible, setButtonsVisible] = useState(false); // Initialize buttons visibility state to false
+
+  useEffect(() => {
+    setConfettiOn(true);
+    const fadeTimer = setTimeout(() => setFadeOut(true), 7000);
+    const offTimer = setTimeout(() => setConfettiOn(false), 9000);
+    const buttonsTimer = setTimeout(() => setButtonsVisible(true), 8000); // Show buttons after 6 seconds
+
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(offTimer);
+      clearTimeout(buttonsTimer);
+    };
+  }, []);
+
+  const handleReset = () => {
+    window.location.reload(); // Reload the page to reset
+  };
+
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Happy Birthday, Shirley!
+    <main>
+      <div className="container">
+        {confettiOn && (
+          <div className={fadeOut ? "fade-out" : ""}>
+            <Confetti />
+          </div>
+        )}
+        <VaraText />
+        <ShirleyText />
         <br />
-        <span style={headingAccentStyles}>🎉🎂🎈</span>
-      </h1>
-      <p style={paragraphStyles}>
-        Wishing you a day filled with love, joy, and all your favorite things. Enjoy your special day!
-      </p>
-      <button style={buttonStyles} onClick={() => alert("Happy Birthday, Shirley!")}>
-        Send Wishes
-      </button>
+        <div style={{ paddingTop: "40px" }}>
+          {/* Conditionally render buttons based on buttonsVisible state */}
+          {buttonsVisible && (
+            <>
+              <button
+                className="secondary-button fade-in" // Add fade-in class directly for animation
+                onClick={handleReset}
+                aria-label="Reset"
+              >
+                <FaRedo />
+              </button>
+              <button className="fade-in">Open</button>
+            </>
+          )}
+        </div>
+      </div>
     </main>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
-export const Head = () => <title>Happy Birthday, Shirley!</title>
+export const Head = () => <title>Happy Birthday, Shirley!</title>;
