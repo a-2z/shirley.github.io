@@ -20,7 +20,7 @@ const AllNotes = () => {
 
   return (
     <div className="container">
-      <main>
+      <main className="buttons-container">
         {friendsData.map((friend) => {
           const isRevealed = revealedNotes.includes(friend.name);
           return isRevealed ? (
