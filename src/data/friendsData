@@ -4,12 +4,43 @@ const friendsData = [
   {
     name: "Jen",
     image: require("../images/messages/Jen_profile.png").default,
-    notes: [
-      require("../images/messages/jen_message.png").default,
-      // Add more notes as needed
-    ],
+    notes: require("../images/messages/jen_message.png").default,
   },
-  // Add more friends similarly
+  {
+    name: "Adrian",
+    image: require("../images/messages/Adrian_profile.png").default,
+    notes: require("../images/messages/adrian_message.jpg").default,
+  },
+  {
+    name: "Sheridan",
+    image: require("../images/messages/Sheridan_profile.png").default,
+    notes: require("../images/messages/sheridan_message_1.jpg").default,
+  },
+  {
+    name: "Bouke",
+    image: require("../images/messages/Bouke_profile.png").default,
+    notes: require("../images/messages/sheridan_message_1.jpg").default,
+  },
+  {
+    name: "Alan",
+    image: require("../images/messages/Alan_profile.png").default,
+    notes: null
+  },
+  {
+    name: "Grant",
+    image: require("../images/messages/Grant_profile.png").default,
+    notes: null,
+  },
+  {
+    name: "Dana",
+    image: require("../images/messages/Dana_profile.png").default,
+    notes: null,
+  },
+  {
+    name: "Andrew",
+    image: require("../images/messages/Andrew_profile.png").default,
+    notes: null,
+  },
 ];
 
 export default friendsData;
