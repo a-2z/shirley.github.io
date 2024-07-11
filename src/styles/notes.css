@@ -57,37 +57,62 @@
   .main {
     margin-bottom: 40px;
   }
-  
   .mysterious-button {
     font-size: 24px;
-    background-color: #e91e63;
-    color: white;
+    background-color: #ccc; /* Grayscale background */
+    color: #333; /* Darker color for the question mark */
     border: none;
-    padding: 15px 30px;
+    width: 80px; /* Ensure the button is circular */
+    height: 80px; /* Ensure the button is circular */
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .mysterious-button:hover {
-    background-color: #ff4081;
+    background-color: #b3b3b3; /* Slightly darker on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  .revealed-note-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
   }
   
   .revealed-note-link {
     display: inline-block;
     text-decoration: none;
     color: #333;
-    padding: 10px;
-    border: 2px solid #e91e63;
-    border-radius: 5px;
-    margin-top: 20px;
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    border-radius: 50%;
+    overflow: hidden;
     transition: all 0.3s ease;
+    border: 2px solid #e91e63;
+  }
+  
+  .revealed-note-link img.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   
   .revealed-note-link:hover {
     background-color: #e91e63;
     color: white;
   }
+  
+  .revealed-note-text {
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
   
   .profile-pic {
     width: 50px;

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
-import adrian from "../images/polaroids/adrian_office.jpg";
+import Jen from "../images/messages/Jen_profile.png";
 import "../styles/notes.css";
 
 // Functional component for the main page
@@ -21,16 +21,19 @@ const AllNotes = () => {
   };
 
   // Check if Sheridan's note is revealed
-  const sheridanRevealed = revealedNotes.includes("Sheridan");
+  const JenRevealed = revealedNotes.includes("Sheridan");
 
   return (
     <div className="container">
       <main>
-        {sheridanRevealed ? (
+        {JenRevealed ? (
+          <div className="revealed-note-container">
+          <span className="revealed-note-text">Jen's Note</span>
           <a href="/notes" className="revealed-note-link">
-            <img src={adrian} alt="Sheridan" className="profile-pic" />
-            <span>Sheridan's Note</span>
+            <img src={Jen} alt="Jen" className="profile-pic" />
           </a>
+        </div>
+        
         ) : (
           <button className="mysterious-button" onClick={() => revealNote("Sheridan")}>
             ?
