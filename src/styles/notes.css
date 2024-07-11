@@ -1,0 +1,48 @@
+/* styles/notes.css */
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Adjusts columns based on available space */
+  gap: 10px 20px; /* Reduced vertical spacing and kept horizontal spacing */
+  padding: 20px;
+  width: 100%;
+  justify-items: center; /* Center align items horizontally */
+}
+
+.buttons-container button,
+.revealed-note-container {
+  width: 80px; /* Ensure the button is circular */
+  height: 80px; /* Ensure the button is circular */
+}
+
+.mysterious-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%; /* Make buttons circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mysterious-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.revealed-note-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.revealed-note-link img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Ensure the image is circular */
+}
