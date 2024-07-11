@@ -1,48 +1,44 @@
-// Import necessary libraries
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// src/pages/allNotes.js
+
+import React, { useState } from "react";
+import { Link } from "gatsby";
 import Cookies from "js-cookie";
-import Jen from "../images/messages/Jen_profile.png";
+import friendsData from "../data/friendsData";
 import "../styles/notes.css";
 
-// Functional component for the main page
 const AllNotes = () => {
-  // State to track which notes are revealed
   const [revealedNotes, setRevealedNotes] = useState(() => {
     const savedNotes = Cookies.get("revealedNotes");
     return savedNotes ? JSON.parse(savedNotes) : [];
   });
 
-  // Function to reveal a note and update cookies
-  const revealNote = (note) => {
-    const updatedNotes = [...revealedNotes, note];
+  const revealNote = (friendName) => {
+    const updatedNotes = [...revealedNotes, friendName];
     setRevealedNotes(updatedNotes);
-    Cookies.set("revealedNotes", JSON.stringify(updatedNotes), { expires: 7 }); // Cookie expires in 7 days
+    Cookies.set("revealedNotes", JSON.stringify(updatedNotes), { expires: 7 });
   };
-
-  // Check if Sheridan's note is revealed
-  const JenRevealed = revealedNotes.includes("Sheridan");
 
   return (
     <div className="container">
       <main>
-        {JenRevealed ? (
-          <div className="revealed-note-container">
-          <span className="revealed-note-text">Jen's Note</span>
-          <a href="/notes" className="revealed-note-link">
-            <img src={Jen} alt="Jen" className="profile-pic" />
-          </a>
-        </div>
-        
-        ) : (
-          <button className="mysterious-button" onClick={() => revealNote("Sheridan")}>
-            ?
-          </button>
-        )}
+        {friendsData.map((friend) => {
+          const isRevealed = revealedNotes.includes(friend.name);
+          return isRevealed ? (
+            <div key={friend.name} className="revealed-note-container">
+              <span className="revealed-note-text">{`${friend.name}'s Note`}</span>
+              <Link to={`/notes/${friend.name}`} className="revealed-note-link">
+                <img src={friend.image} alt={friend.name} className="profile-pic" />
+              </Link>
+            </div>
+          ) : (
+            <button key={friend.name} className="mysterious-button" onClick={() => revealNote(friend.name)}>
+              ?
+            </button>
+          );
+        })}
       </main>
     </div>
   );
 };
 
-// Export the component as default
 export default AllNotes;

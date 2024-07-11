@@ -1,0 +1,15 @@
+// src/data/friendsData.js
+
+const friendsData = [
+  {
+    name: "Jen",
+    image: require("../images/messages/Jen_profile.png").default,
+    notes: [
+      require("../images/messages/jen_message.png").default,
+      // Add more notes as needed
+    ],
+  },
+  // Add more friends similarly
+];
+
+export default friendsData;
