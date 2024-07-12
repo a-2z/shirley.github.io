@@ -1,5 +1,3 @@
-/* styles/notes.css */
-
 .buttons-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjusts columns based on available space */
@@ -18,7 +16,7 @@
 .mysterious-button {
   padding: 10px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #ff147a;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -30,7 +28,7 @@
 }
 
 .mysterious-button:hover {
-  background-color: #0056b3;
+  background-color: #ff147a;
   transform: scale(1.1);
 }
 
@@ -40,7 +38,14 @@
   align-items: center;
   justify-content: center;
 }
-/* styles/notes.css */
+
+.revealed-note-text {
+  font-family: 'Roboto', sans-serif; /* Example: Use a modern font family */
+  font-size: 14px;
+  font-weight: bold; /* Adjust the font size as needed */
+  margin-bottom: 8px; /* Add spacing between text and image */
+  color: #333; /* Adjust the color to match your design */
+}
 
 .revealed-note-link {
   width: 140px; /* Adjust this width to fit your design */
@@ -51,6 +56,6 @@
 .revealed-note-link img {
   width: 100%;
   height: 100%;
-  object-fit: fill; /* Ensure the image covers the entire space */
+  object-fit: cover; /* Ensure the image covers the entire space */
   border-radius: 50%; /* Ensure the image is circular */
 }

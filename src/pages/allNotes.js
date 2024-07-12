@@ -1,5 +1,3 @@
-// src/pages/allNotes.js
-
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import Cookies from "js-cookie";

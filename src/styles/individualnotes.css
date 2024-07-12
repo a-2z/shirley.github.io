@@ -15,14 +15,14 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  color: #007bff;
+  color: #ff147a;
   font-size: 24px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .back-button:hover {
-  color: #0056b3;
+  color: #ff147a;
 }
 
 .content {
