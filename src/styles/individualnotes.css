@@ -1,0 +1,68 @@
+/* styles/individualnotes.css */
+
+.note-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Ensure relative positioning for the back button */
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #ff147a;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #ff147a;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.small-pic {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.message-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message-image-transparent {
+  max-width: 100%;
+  height: auto;
+}
+
+.message-content {
+  margin-top: 40px;
+}

@@ -9,13 +9,13 @@ import "../styles/animations.css";
 const IndexPage = () => {
   const [confettiOn, setConfettiOn] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
-  const [buttonsVisible, setButtonsVisible] = useState(false); // Initialize buttons visibility state to false
+  const [buttonsVisible, setButtonsVisible] = useState(false);
 
   useEffect(() => {
     setConfettiOn(true);
     const fadeTimer = setTimeout(() => setFadeOut(true), 7000);
     const offTimer = setTimeout(() => setConfettiOn(false), 9000);
-    const buttonsTimer = setTimeout(() => setButtonsVisible(true), 8000); // Show buttons after 6 seconds
+    const buttonsTimer = setTimeout(() => setButtonsVisible(true), 8000);
 
     return () => {
       clearTimeout(fadeTimer);
@@ -25,7 +25,7 @@ const IndexPage = () => {
   }, []);
 
   const handleReset = () => {
-    window.location.reload(); // Reload the page to reset
+    window.location.reload();
   };
 
   return (
@@ -39,18 +39,15 @@ const IndexPage = () => {
         <VaraText />
         <ShirleyText />
         <br />
-        <div style={{ paddingTop: "40px" }}>
-          {/* Conditionally render buttons based on buttonsVisible state */}
+        <div style={{ paddingTop: "20px" }}>
           {buttonsVisible && (
             <>
-              <button
-                className="secondary-button fade-in" // Add fade-in class directly for animation
-                onClick={handleReset}
-                aria-label="Reset"
-              >
-                <FaRedo />
-              </button>
-              <button className="fade-in">Open</button>
+              <a href="/scrapbook" className="fade-in button-link">
+                <button className="secondary-button fade-in">Scrapbook</button>
+              </a>
+              <a style={{ paddingLeft: "20px" }} href="/allNotes" className="fade-in button-link">
+                <button className="fade-in ">Card</button>
+              </a>
             </>
           )}
         </div>
