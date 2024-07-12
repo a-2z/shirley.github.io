@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Vara from "vara";
 import "../styles/styles.css"; 
 
-function SignatureText() {
+function SheridanText() {
   useEffect(() => {
     var vara = new Vara(
       "#vara-container",
@@ -10,7 +10,7 @@ function SignatureText() {
       [
         {
           id: "Alan",
-          text: "From Alan",  
+          text: "From Sheridan",  
           textAlign: "left",
           fontSize: 40,
           x: 10,
@@ -27,4 +27,4 @@ function SignatureText() {
   );
 }
 
-export default SignatureText;
+export default SheridanText;

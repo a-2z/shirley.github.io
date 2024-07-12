@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "gatsby";
 import { FaArrowLeft } from "react-icons/fa";
 import "../../styles/individualnotes.css";
-import AlanMsg from "../../images/messages/adrian_message.jpg";
-import AlanProfile from "../../images/messages/Alan_profile.png";
-import SignatureText from "../../pages/SignatureText";
+import msg from "../../images/messages/jen_message.png";
+import profile from "../../images/messages/Jen_profile.png";
 
-const Alan = () => {
+const Jen = () => {
   return (
     <div className="note-container">
       <Link to="/allNotes" className="back-button">
@@ -14,14 +13,13 @@ const Alan = () => {
       </Link>
       
       <div className="message-content">
-        <img src={AlanMsg} alt="Alan's message" className="message-image" />
+        <img src={msg} alt="message" className="message-image-transparent" />
       </div>
       <div className="content">
-        <img src={AlanProfile} alt="Alan" className="small-pic" />
-        <SignatureText id="Alan" />
+        <img src={profile} alt="person" />
       </div>
     </div>
   );
 };
 
-export default Alan;
+export default Jen;

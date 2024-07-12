@@ -2,15 +2,14 @@ import React, { useEffect } from "react";
 import Vara from "vara";
 import "../styles/styles.css"; 
 
-function SignatureText() {
+function GrantText() {
   useEffect(() => {
     var vara = new Vara(
       "#vara-container",
       "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
       [
         {
-          id: "Alan",
-          text: "From Alan",  
+          text: "From Grant",  
           textAlign: "left",
           fontSize: 40,
           x: 10,
@@ -27,4 +26,4 @@ function SignatureText() {
   );
 }
 
-export default SignatureText;
+export default GrantText;

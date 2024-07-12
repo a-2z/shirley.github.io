@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #f0f0f0;
   padding: 20px;
   text-align: center;
   position: relative; /* Ensure relative positioning for the back button */
@@ -28,9 +27,10 @@
 
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .heading {
@@ -45,10 +45,24 @@
   margin-bottom: 20px;
 }
 
+.small-pic {
+    width: 30%;
+    margin-right: 20px;
+}
+
 .message-image {
   max-width: 100%;
   height: auto;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message-image-transparent {
+  max-width: 100%;
+  height: auto;
+}
+
+.message-content {
+  margin-top: 40px;
 }
