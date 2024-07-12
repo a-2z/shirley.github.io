@@ -37,7 +37,7 @@ button:hover {
     font-size: 1.2rem;
     color: #ff147a; /* Pink text color */
     background-color: #ffffff; /* White background */
-    border: 2px solid #ffffff; /* Pink border */
+    border: 2px solid #ff147a; /* Pink border */
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;

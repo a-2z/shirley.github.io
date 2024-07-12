@@ -3,6 +3,7 @@
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjusts columns based on available space */
   gap: 10px 20px; /* Reduced vertical spacing and kept horizontal spacing */
   padding: 0px;
+  padding-top: 40px;
   width: 100%;
   justify-items: center; /* Center align items horizontally */
 }
@@ -11,6 +12,20 @@
 .revealed-note-container {
   width: 140px; /* Ensure the button is circular */
   height: 140px; /* Ensure the button is circular */
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #ff147a;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #ff147a;
 }
 
 .mysterious-button {
