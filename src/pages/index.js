@@ -39,18 +39,14 @@ const IndexPage = () => {
         <VaraText />
         <ShirleyText />
         <br />
-        <div style={{ paddingTop: "40px" }}>
+        <div style={{ paddingTop: "20px" }}>
           {buttonsVisible && (
             <>
-              <button
-                className="secondary-button fade-in"
-                onClick={handleReset}
-                aria-label="Reset"
-              >
-                <FaRedo />
-              </button>
-              <a href="/allNotes" className="fade-in button-link">
-                <button className="fade-in">Open</button>
+              <a href="/scrapbook" className="fade-in button-link">
+                <button className="secondary-button fade-in">Scrapbook</button>
+              </a>
+              <a style={{ paddingLeft: "20px" }} href="/allNotes" className="fade-in button-link">
+                <button className="fade-in ">Card</button>
               </a>
             </>
           )}

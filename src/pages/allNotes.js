@@ -1,7 +1,6 @@
-// src/pages/allNotes.js
-
 import React, { useState } from "react";
 import { Link } from "gatsby";
+import { FaArrowLeft } from "react-icons/fa";
 import Cookies from "js-cookie";
 import friendsData from "../data/friendsData";
 import "../styles/notes.css";
@@ -20,6 +19,10 @@ const AllNotes = () => {
 
   return (
     <div className="container">
+      <Link to="/" className="back-button" >
+        <FaArrowLeft />
+      </Link>
+
       <main className="buttons-container">
         {friendsData.map((friend) => {
           const isRevealed = revealedNotes.includes(friend.name);
