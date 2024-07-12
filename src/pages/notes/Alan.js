@@ -1,35 +1,25 @@
-// src/pages/Alan.js
-
-import React from "react"
+import React from "react";
+import { Link } from "gatsby";
+import { FaArrowLeft } from "react-icons/fa";
+import "../../styles/individualnotes.css";
+import AlanMsg from "../../images/messages/adrian_message.jpg";
+import AlanProfile from "../../images/messages/Alan_profile.png";
+import SignatureText from "../../pages/SignatureText";
 
 const Alan = () => {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.heading}>Hello, I'm Alan!</h1>
-      <p style={styles.paragraph}>Welcome to my page on Shirley's birthday website.</p>
+    <div className="note-container">
+      <Link to="/allNotes" className="back-button">
+        <FaArrowLeft />
+      </Link>
+        <img src={AlanProfile} alt="Alan" className="profile-pic" />
+      
+      <div className="message-content">
+        <img src={AlanMsg} alt="Alan's message" className="message-image" />
+      </div>
+      <SignatureText id="Alan" />
     </div>
-  )
-}
+  );
+};
 
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    minHeight: '100vh',
-    backgroundColor: '#f0f0f0',
-    padding: '20px',
-    textAlign: 'center',
-  },
-  heading: {
-    fontSize: '2rem',
-    color: '#333',
-  },
-  paragraph: {
-    fontSize: '1rem',
-    color: '#666',
-  }
-}
-
-export default Alan
+export default Alan;

@@ -1,4 +1,5 @@
 // src/pages/notes.js
+// NOTE THAT THIS PAGE WOULD BE USED TO CREATE DYNAMIC PAGES BUT DOESNT WORK YET
 
 import React, { useState } from "react";
 import { graphql, Link } from "gatsby";

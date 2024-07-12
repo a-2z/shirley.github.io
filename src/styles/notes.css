@@ -2,17 +2,17 @@
 
 .buttons-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Adjusts columns based on available space */
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjusts columns based on available space */
   gap: 10px 20px; /* Reduced vertical spacing and kept horizontal spacing */
-  padding: 20px;
+  padding: 0px;
   width: 100%;
   justify-items: center; /* Center align items horizontally */
 }
 
 .buttons-container button,
 .revealed-note-container {
-  width: 80px; /* Ensure the button is circular */
-  height: 80px; /* Ensure the button is circular */
+  width: 140px; /* Ensure the button is circular */
+  height: 140px; /* Ensure the button is circular */
 }
 
 .mysterious-button {
@@ -40,9 +40,18 @@
   align-items: center;
   justify-content: center;
 }
+/* styles/notes.css */
+
+.revealed-note-link {
+  width: 140px; /* Adjust this width to fit your design */
+  height: 140px; /* Adjust this height to fit your design */
+  display: block; /* Ensure the link behaves like a block element */
+}
 
 .revealed-note-link img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: fill; /* Ensure the image covers the entire space */
   border-radius: 50%; /* Ensure the image is circular */
 }
+
