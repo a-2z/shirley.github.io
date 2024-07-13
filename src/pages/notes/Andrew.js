@@ -3,7 +3,8 @@ import { Link } from "gatsby";
 import { FaArrowLeft } from "react-icons/fa";
 import "../../styles/individualnotes.css";
 // replace
-import msg from "../../images/messages/adrian_message.jpg";
+import msg from "../../images/messages/andrew_message_1.png";
+import msg2 from "../../images/messages/andrew_message_2.png";
 import profile from "../../images/messages/Andrew_profile.png";
 import AndrewText from "../../pages/AndrewText";
 
@@ -16,7 +17,8 @@ const Andrew = () => {
       </Link>
       
       <div className="message-content">
-        <img src={msg} alt="Alan's message" className="message-image" />
+        <img src={msg} className="message-image-transparent" />
+        <img src={msg2} className="message-image-transparent" />
       </div>
       <div className="content">
         <img src={profile} alt="Alan" className="small-pic" />

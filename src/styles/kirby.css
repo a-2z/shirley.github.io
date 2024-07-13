@@ -1,0 +1,53 @@
+/* styles/kirby.css */
+/* 
+/* body {
+    background: linear-gradient(to bottom, #6420cb, #ff00ff);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  } */
+  
+  .note-container2 {
+    padding: 20px;
+    background: linear-gradient(to bottom, #6420cb, #ff00ff);
+    border-radius: 20px;
+  }
+
+  /*
+  .back-button {
+    color: #ff69b4;
+  }
+  
+  .back-button:hover {
+    color: #ff69b4;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .small-pic {
+    width: 25%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .message-image-transparent {
+    max-width: 100%;
+    height: auto;
+  }
+*/
+  
+  .message-content2 {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid #ff69b4;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+  }
+   

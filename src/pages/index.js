@@ -48,6 +48,7 @@ const IndexPage = () => {
               <a style={{ paddingLeft: "20px" }} href="/allNotes" className="fade-in button-link">
                 <button className="fade-in ">Card</button>
               </a>
+              
             </>
           )}
         </div>
