@@ -15,7 +15,7 @@ const Adrian = () => {
       </Link>
       
       <div className="message-content">
-        <img src={msg} alt="message" className="message-image-transparent" />
+        <img src={msg} alt="message" className="message-image" />
       </div>
       <div className="content">
         <img src={profile} alt="person" className="small-pic"/>
