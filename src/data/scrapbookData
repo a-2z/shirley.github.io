@@ -1,0 +1,130 @@
+// src/data/scrapbookData.js
+
+const scrapbookData = [
+    {
+        type: "polaroid",
+        "note": "Lobster roll time", 
+        image: require("../images/polaroids/adrian_lobster_roll.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Me when ham & cheese", 
+        image: require("../images/polaroids/shirley_ham_and_cheese.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Sooooup", 
+        image: require("../images/polaroids/shirley_soup.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Relaxing with puppy", 
+        image: require("../images/polaroids/doggie.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Meet the gang", 
+        image: require("../images/polaroids/dana_alan_shirley.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Gamers", 
+        image: require("../images/polaroids/game_night.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Eclipse watching", 
+        image: require("../images/polaroids/eclipse.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Pride parade!", 
+        image: require("../images/polaroids/pride.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Shirley & Jen", 
+        image: require("../images/polaroids/shirley_and_jen1.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Shirley & Jen II", 
+        image: require("../images/polaroids/shirley_and_jen2.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Shirley, Jen & Bouke", 
+        image: require("../images/polaroids/shirley_jen_bouke.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Makin' music", 
+        image: require("../images/polaroids/dana_piano.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Bumper cars", 
+        image: require("../images/polaroids/bumper.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "At night at the theater", 
+        image: require("../images/polaroids/symphony_selfie.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Theater ft. Sheridan", 
+        image: require("../images/polaroids/symphony_sheridan.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Congrats Grad!", 
+        image: require("../images/polaroids/grad.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Sittin'", 
+        image: require("../images/polaroids/cool_lightup.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Slayin'", 
+        image: require("../images/polaroids/house_party.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Stylin'", 
+        image: require("../images/polaroids/matching_fits_street.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Sleepin'", 
+        image: require("../images/polaroids/shlump_in_the_car.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "A decent day", 
+        image: require("../images/polaroids/misc_selfie.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Kirbyy;", 
+        image: require("../images/polaroids/shirley_kirby.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "Go Sox !", 
+        image: require("../images/polaroids/cindy_red_sox.jpg").default
+    },
+    {
+        type: "polaroid",
+        "note": "By the pool !", 
+        image: require("../images/polaroids/swimming.jpg").default
+    },
+    {
+        type: "message",
+        content: "Happy Birthday, Shirley!!"
+    }
+];
+
+export default scrapbookData;
