@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { FaArrowLeft } from "react-icons/fa";
 import "../../styles/kirby.css";
-import msg from "../../images/messages/dana_message.png";
+import msg from "../../images/messages/dana_message.PNG";
 import profile from "../../images/messages/Dana_profile.png";
 import Kirby from "../../images/assets/pantsKirb.gif";
 import Kirby2 from "../../images/assets/poyo.png"
