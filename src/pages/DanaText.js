@@ -12,6 +12,7 @@ function DanaText() {
           text: "From Dana",  
           textAlign: "left",
           fontSize: 40,
+          color: "white",
           x: 10,
           y: 10,
           strokeWidth: 1.8,

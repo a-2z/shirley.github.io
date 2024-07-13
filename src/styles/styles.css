@@ -7,6 +7,10 @@ main {
   text-align: center; /* Center align text content */
 }
 
+body {
+  background-color: #ffffff;
+}
+
 /* Container for buttons */
 .button-container {
   display: flex;
