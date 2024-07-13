@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import { FaArrowLeft } from "react-icons/fa";
 import "../../styles/individualnotes.css";
-// replace
-import msg from "/src/images/messages/andrew_message_1.png";
-import msg2 from "/src/images/messages/andrew_message_2.png";
+// replace hehe
+import msg from "/src/images/messages/andrew_message_1.PNG";
+import msg2 from "/src/images/messages/andrew_message_2.PNG";
 import profile from "/src/images/messages/Andrew_profile.png";
 import AndrewText from "/src/pages/AndrewText";
 
