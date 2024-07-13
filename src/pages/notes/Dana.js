@@ -7,8 +7,7 @@ import profile from "../../images/messages/Dana_profile.png";
 import Kirby from "../../images/assets/pantsKirb.gif";
 import Kirby2 from "../../images/assets/poyo.png"
 import DanaText from "../../pages/DanaText";
-
-
+// hehe hey wassup its dana banana
 
 const Dana = () => {
   return (
