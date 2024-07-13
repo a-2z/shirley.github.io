@@ -48,13 +48,13 @@ const scrapbookData = [
     },
     {
         type: "polaroid",
-        "note": "Shirley & Jen II", 
+        "note": "Shirley & Jen Pt. 2", 
         image: require("../images/polaroids/shirley_and_jen2.jpg").default
     },
     {
         type: "polaroid",
-        "note": "Shirley, Jen & Bouke", 
-        image: require("../images/polaroids/shirley_jen_bouke.jpg").default
+        "note": "Shirley & Jen III", 
+        image: require("../images/polaroids/shirley_and_jen3.jpg").default
     },
     {
         type: "polaroid",
@@ -68,13 +68,13 @@ const scrapbookData = [
     },
     {
         type: "polaroid",
-        "note": "At night at the theater", 
-        image: require("../images/polaroids/symphony_selfie.jpg").default
+        "note": "At night at the ballet", 
+        image: require("../images/polaroids/ballet_selfie.jpg").default
     },
     {
         type: "polaroid",
-        "note": "Theater ft. Sheridan", 
-        image: require("../images/polaroids/symphony_sheridan.jpg").default
+        "note": "Ballet ft. Sheridan", 
+        image: require("../images/polaroids/ballet_sheridan.jpg").default
     },
     {
         type: "polaroid",
