@@ -3,10 +3,10 @@ import { Link } from "gatsby";
 import { FaArrowLeft } from "react-icons/fa";
 import "../../styles/individualnotes.css";
 // replace
-import msg from "../../images/messages/andrew_message_1.png";
-import msg2 from "../../images/messages/andrew_message_2.png";
-import profile from "../../images/messages/Andrew_profile.png";
-import AndrewText from "../../pages/AndrewText";
+import msg from "/src/images/messages/andrew_message_1.png";
+import msg2 from "/src/images/messages/andrew_message_2.png";
+import profile from "/src/images/messages/Andrew_profile.png";
+import AndrewText from "/src/pages/AndrewText";
 
 
 const Andrew = () => {
