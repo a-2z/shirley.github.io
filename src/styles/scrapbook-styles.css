@@ -2,34 +2,105 @@
 /* 
 Scrapbook Page Properties
 */
-.scrapbook-viewer {
+
+html {
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
-.scrapbook-desktop {
-    background-image: url(../images/assets/desk_background.jpg);
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.scrapbook-viewer {
     width: 100 vw;
     height: 100 vh;
-    margin: 0;
+    background-image: url(../images/assets/desk_background.jpg);
     padding: 0;
-} 
-
-.scrapbook-cover {
-    background-image: url(../images/assets/scrapbook_cover_background.jpg);
-    background-size: cover;
-    margin:auto;
-    text-align: center;
-    @media (orientation: landscape) {
-        height: 100vh;
-    }
-    @media (orientation: portrait) {
-        width: 100vw;
-    }
-    aspect-ratio: 4 / 3;
+    margin: 0;
 }
 
-.scrapbook-cover-text-container {
-    margin-top: 49vh;
-    font-family: cursive;
+.scrapbook-content-container {
+    padding: 4px;
+    box-sizing: border-box;
+    background-color: rgb(223, 185, 180);
+    border-radius: 5px;
+    outline: none;
+}
+
+.scrapbook-cover {
+    background-image: url(../images/assets/scrapbook_cover.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    @media (orientation: landscape) {
+        height: 95vh;
+    }
+    @media (orientation: portrait) {
+        width: 95vw;
+    }
+    aspect-ratio: 3 / 4;
+}
+
+
+.scrapbook-dual-page {
+    @media (orientation: landscape) {
+        height: 95vh;
+    }
+    @media (orientation: portrait) {
+        width: 95vw;
+    }
+    aspect-ratio: 6 / 4;
+    display: flex;
+}
+
+.scrapbook-content-page {
+    background-image: url(../images/assets/bullet_journal_background.jpg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+                0 1px 3px #00000014;
+    border-radius: 4px;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 3 / 4;
+}
+
+@font-face {
+    font-family: 'Salmon';
+    src: local('Salmon'), url(../fonts/Salmon.otf) format('opentype');
+}
+
+.scrapbook-note-style {
+    font-family: 'Salmon';
+    font-size: large;
+}
+
+.scrapbook-polaroid-border {
+    width: 30%;
+    margin: 20px;
+    background-color: white;
+    aspect-ratio: 3.5 / 4.2;
+    border-style: outset;
+}
+
+.scrapbook-polaroid-image-container {
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    overflow: hidden;
+    width: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.scrapbook-polaroid-image {
+    width: 100%;
+    object-fit: fill;
 }
