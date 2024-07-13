@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 import { FaArrowLeft } from "react-icons/fa";
 import "../../styles/individualnotes.css";
 // replace hehe
-import msg from "/src/images/messages/andrew_message_1.PNG";
-import msg2 from "/src/images/messages/andrew_message_2.PNG";
+import msg from "/src/images/messages/andrew_message_1.png";
+import msg2 from "/src/images/messages/andrew_message_2.png";
 import profile from "/src/images/messages/Andrew_profile.png";
 import AndrewText from "/src/pages/AndrewText";
 
