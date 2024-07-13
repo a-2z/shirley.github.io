@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { FaArrowLeft } from "react-icons/fa";
 import "../../styles/individualnotes.css";
-// replace
-import msg from "../../images/messages/grant_message.PNG";
+import msg from "../../images/messages/grant_message_3.png";
 import profile from "../../images/messages/Grant_profile.png";
 import GrantText from "../../pages/GrantText";
 
