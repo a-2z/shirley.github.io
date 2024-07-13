@@ -1,9 +1,11 @@
+/* styles/notes.css */
+
 .buttons-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjusts columns based on available space */
-  gap: 10px 20px; /* Reduced vertical spacing and kept horizontal spacing */
-  padding: 0px;
-  padding-top: 40px;
+  grid-auto-rows: 140px; /* Ensure each row has a height of 140px */
+  gap: 40px; /* Consistent spacing between grid items */
+  padding-top: 90px;
   width: 100%;
   justify-items: center; /* Center align items horizontally */
 }
